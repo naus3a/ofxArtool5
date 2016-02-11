@@ -5,8 +5,10 @@ void ofApp::setup(){
     ofBackground(0, 0, 0);
     ofSetFrameRate(60);
     
-    cam.initGrabber(1280, 720);
-    art.setup(ofVec2f(1280,720), ofVec2f(1280,720));
+    ofVec2f camSize(1280, 720);
+    
+    cam.initGrabber(camSize.x, camSize.y);
+    art.setup(camSize, camSize);
 }
 
 //--------------------------------------------------------------
