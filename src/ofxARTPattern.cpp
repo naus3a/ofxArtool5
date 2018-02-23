@@ -64,13 +64,11 @@ bool PatternTracker::setupCamera(string pthCamParam, ofVec2f _camSize, ofVec2f _
     ARParam cParam;
     AR_PIXEL_FORMAT pixFormat = ofxArtool5::toAR(pf);
     
-    const char * cPathCamParam = ofToDataPath(pthCamParam).c_str();
-    
     camSize=_camSize;
     viewportSize=_viewportSize;
     
-    if(arParamLoad(cPathCamParam, 1, &cParam)){
-        ofLogError("ofxArtool5::setupCamera()", "error loading param file");
+    if(arParamLoad(ofToDataPath(pthCamParam).c_str(), 1, &cParam)){
+        ofLogError("ofxArtool5::setupCamera(), error loading param file");
         return false;
     }
     
@@ -110,14 +108,12 @@ bool PatternTracker::setupCamera(string pthCamParam, ofVec2f _camSize, ofVec2f _
 }
 
 bool PatternTracker::setupMarker(string pthMarker){
-    const char * cPthMarker = ofToDataPath(pthMarker).c_str();
-    
     if((gARPattHandle = arPattCreateHandle())==NULL){
         ofLogError("ofxArtool5::setupMarker()","Error arPattCreateHandle");
         return false;
     }
     
-    if((pattId = arPattLoad(gARPattHandle, cPthMarker))<0){
+    if((pattId = arPattLoad(gARPattHandle, ofToDataPath(pthMarker).c_str()))<0){
         ofLogError("ofxArtool5::setupMarker()","Error arPattLoad");
         arPattDeleteHandle(gARPattHandle);
         return false;
