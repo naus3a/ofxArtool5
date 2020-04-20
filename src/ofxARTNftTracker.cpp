@@ -212,7 +212,8 @@ bool NftTracker::setup(ofVec2f _camSize, ofVec2f _viewportSize, ofPixelFormat pf
     arUtilTimerReset();
     
     //load markers
-    const char * cPathMarkerParam = ofToDataPath(pthMarkerData).c_str();
+    string pthMarker = ofFilePath::getAbsolutePath(ofToDataPath(pthMarkerData));
+    const char * cPathMarkerParam = pthMarker.c_str();
     newMarkers(cPathMarkerParam, &markersNFT, &markersNFTCount);
     if (!markersNFTCount) {
         ofLogError("ofxArtool5::setup","Error loading markers from config. file "+pthMarkerData);
@@ -239,7 +240,7 @@ bool NftTracker::setupCamera(string pthCamParam, ofVec2f _camSize, ofVec2f _view
     ARParam cparam;
     AR_PIXEL_FORMAT pixFormat = ofxArtool5::toAR(pf);
     
-    string pth = ofToDataPath(pthCamParam);
+    string pth = ofFilePath::getAbsolutePath(ofToDataPath(pthCamParam));
     const char * cPathCamParam = pth.c_str();
     
     camSize=_camSize;
