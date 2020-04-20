@@ -239,8 +239,8 @@ bool NftTracker::setupCamera(string pthCamParam, ofVec2f _camSize, ofVec2f _view
     ARParam cparam;
     AR_PIXEL_FORMAT pixFormat = ofxArtool5::toAR(pf);
     
-    const char * cPathCamParam = ofToDataPath(pthCamParam).c_str();
-    
+    string pth = ofToDataPath(pthCamParam);
+    const char * cPathCamParam = pth.c_str();
     
     camSize=_camSize;
     viewportSize=_viewportSize;
