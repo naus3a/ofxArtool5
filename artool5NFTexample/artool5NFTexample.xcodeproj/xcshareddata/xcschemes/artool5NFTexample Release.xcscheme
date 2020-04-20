@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "artool5example.app"
-               BlueprintName = "artool5example"
-               ReferencedContainer = "container:artool5example.xcodeproj">
+               BuildableName = "artool5NFTexample.app"
+               BlueprintName = "artool5NFTexample"
+               ReferencedContainer = "container:artool5NFTexample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "artool5example.app"
-            BlueprintName = "artool5example"
-            ReferencedContainer = "container:artool5example.xcodeproj">
+            BuildableName = "artool5NFTexample.app"
+            BlueprintName = "artool5NFTexample"
+            ReferencedContainer = "container:artool5NFTexample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "artool5example.app"
-            BlueprintName = "artool5example"
-            ReferencedContainer = "container:artool5example.xcodeproj">
+            BuildableName = "artool5NFTexample.app"
+            BlueprintName = "artool5NFTexample"
+            ReferencedContainer = "container:artool5NFTexample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "artool5example.app"
-            BlueprintName = "artool5example"
-            ReferencedContainer = "container:artool5example.xcodeproj">
+            BuildableName = "artool5NFTexample.app"
+            BlueprintName = "artool5NFTexample"
+            ReferencedContainer = "container:artool5NFTexample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
