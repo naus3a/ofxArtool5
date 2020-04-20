@@ -7,7 +7,7 @@ At the moment it provides :
 - Marker based AR
 - NFT based AR
 
-Licence
+License
 -------
 Artoolkit is [LGPLv3](https://github.com/artoolkit/artoolkit5/blob/master/LICENSE.txt), so you can consider my code LGPLv3 too.  
 Copyright (c) 2015 Enrico<naus3a>Viola
@@ -19,7 +19,7 @@ Copy to your openFrameworks/addons folder.
 
 Compatibility
 ------------
-openFrameworks 009.x 
+openFrameworks 009+ (tested on 011)
 
 
 Known issues
